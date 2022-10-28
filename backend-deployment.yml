@@ -7,14 +7,12 @@ spec:
   matchLabels:
     type: web
     app: backend
-    version: ver11
  replicas: 1
  template:
    metadata:
      labels:
        type: web
        app: backend
-       version: ver11
    spec:
     containers:
     - name: backend
