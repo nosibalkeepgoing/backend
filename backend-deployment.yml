@@ -7,14 +7,14 @@ spec:
    matchLabels:
     type: webn
     app: backend
-    version: ha
- replicas: 2
+    version: latest
+ replicas: 1
  template:
    metadata:
      labels:
        type: webn
        app: backend
-       version: ha
+       version: latest
    spec:
     containers:
     - name: backend
