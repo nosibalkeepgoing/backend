@@ -4,17 +4,17 @@ metadata:
  name: backend-deployment
 spec:
  selector:
-   matchLabels:
+  matchLabels:
     type: webn
     app: backend
-    version: vlatest
+    version: v.latest
  replicas: 2
  template:
    metadata:
      labels:
        type: webn
        app: backend
-       version: vlatest
+       version: v.latest
    spec:
     containers:
     - name: backend
