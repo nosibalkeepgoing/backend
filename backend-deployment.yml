@@ -5,12 +5,13 @@ metadata:
   labels:
     type: web
     app: backend
+    version: v16
 spec:
   selector:
     matchLabels:
       type: web
       app: backend
-  replicas: 2
+  replicas: 1
   template:
     metadata:
       labels:
